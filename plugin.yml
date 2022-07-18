@@ -1,0 +1,18 @@
+name: CrashBanUsers
+author: "HBIDamian"
+version: 1.0.0
+api: 4.0.0
+main: HBIDamian\CrashBanUsers\Main
+load: STARTUP
+description: "Upon onPlayerLogin, crash banned user's clients will be crashed."
+
+commands:
+  crashban:
+    description: Bans the user
+    usage: "/crashban <player>"
+    permission: crashban.command
+
+permissions:
+  crashban.command:
+    description: Allows user to crash ban users. 
+    default: op
