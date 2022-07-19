@@ -8,11 +8,24 @@ description: "Upon onPlayerLogin, crash banned user's clients will be crashed."
 
 commands:
   crashban:
-    description: Bans the user
+    description: Bans the player
     usage: "/crashban <player>"
-    permission: crashban.command
+    permission: crashban.command.ban
+    aliases:
+      - cban
+  crashunban:
+    description: Unbans the player
+    usage: "/crashunban <player>"
+    permission: crashban.command.unban
+    aliases:
+      - crashpardon
+      - cpardon
+
 
 permissions:
-  crashban.command:
-    description: Allows user to crash ban users. 
+  crashban.command.ban:
+    description: Allows sender to crash ban players. 
+    default: op
+  crashban.command.unban:
+    description: Allows the sender to pardon crash ban players
     default: op
