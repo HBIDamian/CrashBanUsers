@@ -10,22 +10,22 @@ commands:
   crashban:
     description: Bans the player
     usage: "/crashban <player>"
-    permission: crashban.command.ban
+    permission: crashbanusers.command.ban
     aliases:
       - cban
   crashunban:
     description: Unbans the player
     usage: "/crashunban <player>"
-    permission: crashban.command.unban
+    permission: crashbanusers.command.unban
     aliases:
       - crashpardon
       - cpardon
 
 
 permissions:
-  crashban.command.ban:
+  crashbanusers.command.ban:
     description: Allows sender to crash ban players. 
     default: op
-  crashban.command.unban:
+  crashbanusers.command.unban:
     description: Allows the sender to pardon crash ban players
     default: op
